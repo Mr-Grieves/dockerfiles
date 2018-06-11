@@ -1,5 +1,5 @@
-# dockerfiles
-Step 1: Install Docker
-Step 2: Learn how to use Docker
-Step 3: ???
-Step 4: Profit!
+RCL'S Dockerfiles
+=================
+
+This space will hold updated versions of all of our Dockerfiles. It is linked to our [DockerHub repo](https://hub.docker.com/u/ubcrcl/dashboard/).
+
