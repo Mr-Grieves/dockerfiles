@@ -10,5 +10,5 @@ Use regular Docker: ``docker run -it ubcrcl/lasagne-cpu``
 
 To access port 50051, add option: ``-p 50051:50051``
 
-To mount pwd inside the container, add option: ``--volume=$HOME:/workspace
+To mount pwd inside the container, add option: ``--volume=$HOME:/workspace``
 

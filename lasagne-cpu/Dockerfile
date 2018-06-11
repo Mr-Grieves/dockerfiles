@@ -11,14 +11,19 @@ RUN apt-get update && apt-get install -y \
   liblapack-dev \
   libopenblas-dev \
   python-dev \
-  python-pip \
-  python-nose \
-  python-numpy \
-  python-scipy
+  python-pip 
+  #python-nose \
+  #python-numpy \
+  #python-scipy
 
 # Install bleeding-edge Theano
-RUN pip install --upgrade pip
-RUN pip install --upgrade six
+#RUN pip install --upgrade pip
+#RUN pip install --upgrade six
+RUN pip install \
+	numpy \
+	scipy \
+	six
+
 RUN pip install --upgrade --no-deps git+git://github.com/Theano/Theano.git
 
 # Install bleeding-edge Lasagne
@@ -31,4 +36,5 @@ EXPOSE 50051
 ENV GRPC_PYTHON_VERSION 1.0.0
 RUN python -m pip install --upgrade pip
 RUN pip install grpcio==${GRPC_PYTHON_VERSION} grpcio-tools==${GRPC_PYTHON_VERSION}
+
 
