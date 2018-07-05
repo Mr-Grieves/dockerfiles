@@ -101,6 +101,8 @@ WORKDIR /
 
 RUN git clone git@git.assembla.com:ece-rcl/quantitative-ultrasound-server.git -b prostate-purang29
 
+RUN rm -rf /root/.ssh
+
 WORKDIR quantitative-ultrasound-server
 
 RUN ./configure
